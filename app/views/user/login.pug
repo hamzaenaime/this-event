@@ -1,7 +1,7 @@
 extends ../_layout
 
 block app-title
-    | Login | EventManagementSystem
+    | Login | ThisEvent
 
 block vars
    - var bodyClass = 'login';
@@ -13,19 +13,19 @@ block content
                 .row
                     .col-sm-8.col-sm-offset-2.text
                     h1
-                        strong Login or Register in our system
+                        strong Connecter or Créer un Compte dans Notre Système
                     .description
-                        p If you don't have an account yet, you can register and get access to additional features like personal calendar, event scheduler and many more..
+                        p Si vous n'avez pas encore de compte, vous pouvez vous inscrire et accéder à des fonctionnalités supplémentaires telles que l'agenda personnel, le planificateur d'événements, etc.
                 .row
                     .col-sm-6.login-form-wrapper
                         .form-box
                             .form-top
                                 .form-top-left
-                                    h3 Login to our site
-                                    p Enter username and password to log on:
-                                    p You dont have an account ?
+                                    h3 Connecter dans notre site
+                                    p Entrez le nom d'utilisateur et le mot de passe pour vous connecter:
+                                    p Vous n'avez pas de compte?
                                         a(href="/register" class="btn" id="btn-reg")
-                                            strong REGISTER NOW
+                                            strong INSCRIRE MAINTENANT
                                 .form-top-right
                                     i.fa.fa-key
                             .form-bottom
@@ -33,16 +33,16 @@ block content
                                     ul
                                 form(role="form" action="" method="post" class="login-form" id="user-login-form")
                                     .form-group
-                                        label.sr-only(for="form-username") Username
+                                        label.sr-only(for="form-username") Nom d'utilisateur
                                         input(type="text" name="username" placeholder="Username..." class="form-username form-control" id="form-username")
                                         span.error.error-username
                                     .form-group
-                                        label(class="sr-only" for="form-password") Password
+                                        label(class="sr-only" for="form-password") Mot de passe
                                         input(type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password")
                                         span.error.error-password
-                                    button(type="button" class="btn" id="login-button") Sign in!
+                                    button(type="button" class="btn" id="login-button") Se Connecter!
                         .social-login
-                            h3 ...or login with:
+                            h3 ...ou Se Connecter Avec:
                             .social-login-buttons
                                 a(class="btn btn-link-1 btn-link-1-facebook" href="/auth/facebook")
                                     i(class="fa fa-facebook")

@@ -1,7 +1,7 @@
 extends ../_layout
 
 block app-title
-    | Approvals | EventManagementSystem
+    | Approbations  | ThisEvent
 
 block vars
    - var bodyClass = 'profile';
@@ -13,7 +13,7 @@ block content
                 .row
                     .col-sm-8.col-sm-offset-2.text
                     h1
-                        strong Awaiting Events
+                        strong En attente d'événements...
                 .row
                     .col-sm-8.profile-form-wrapper
                         .form-box
@@ -44,7 +44,7 @@ block content
                                                 button(type="button" event-target=event.id class="btn" id="delete-event") Delete
                                                 button(type="button" event-target=event.id class="btn" id="approve-event" style={margin: '5px'}) Approve
                                 else
-                                    h4 There are no events at this time
+                                    h4 Il n'y a pas d'événements en ce moment
 
 block specificJs
     script(src="/static/scripts/users/admin-approvals.js")

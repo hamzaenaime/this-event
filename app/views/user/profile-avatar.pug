@@ -1,7 +1,7 @@
 extends ../_layout
 
 block app-title
-    | Profile | EventManagementSystem
+    | Profile | ThisEvent
 
 block vars
    - var bodyClass = 'profile';
@@ -19,14 +19,14 @@ block content
                         .form-box
                             .form-top
                                 .form-top-left
-                                    h3 Here you can change your avatar
+                                    h3 Ici tu peux changer ton avatar
                                     img(src= user.avatarUrl id="profile-avatar")
                                 .form-top-right
                                    i.fa.fa-pencil
                             .form-bottom
 
                                 #error-container.alert.alert-danger
-                                    strong The following errors need to be corrected:
+                                    strong Les erreurs suivantes doivent être corrigées:
                                     ul
 
                                 form(role="form" enctype="multipart/form-data" action="" method="post" class="profile-form" id="user-profile-form")

@@ -1,7 +1,7 @@
 extends ../_layout
 
 block app-title
-    | Profile | EventManagementSystem
+    | Profile | ThisEvent
 
 block vars
    - var bodyClass = 'profile';
@@ -19,7 +19,7 @@ block content
                         .form-box
                             .form-top
                                 .form-top-left
-                                    h3 Here you can edit your profile information
+                                    h3 Ici, vous pouvez modifier les informations de votre profil.
                                     img(src= user.avatarUrl id="profile-avatar")
                                     div.btn-wrap
                                         a(class="btn btn-green" href="/profile/avatar") Change your avatar
@@ -28,7 +28,7 @@ block content
                             .form-bottom
 
                                 #error-container.alert.alert-danger
-                                    strong The following errors need to be corrected:
+                                    strong Les erreurs suivantes doivent être corrigées:
                                     ul
                                 form(role="form" action="" method="post" class="profile-form" id="user-profile-form")
                                     .form-group
@@ -40,7 +40,7 @@ block content
                                               id="form-email")
                                         span.error.error-email
                                     .form-group
-                                        label(class="" for="form-first-name") First name
+                                        label(class="" for="form-first-name") Prénom
                                         input(type="text"
                                               name="firstName"
                                               value=user.firstName
@@ -48,7 +48,7 @@ block content
                                               id="form-first-name")
                                         span.error.error-firstname
                                     .form-group
-                                        label(class="" for="form-last-name") Last name
+                                        label(class="" for="form-last-name") Nom
                                         input(type="text"
                                               name="lastName"
                                               value=user.lastName
@@ -63,11 +63,7 @@ block content
                                               class="form-age form-control"
                                               id="form-age")
                                         span.error.error-age
-                                    //- .form-group
-                                    //-     label(class="" for="form-password") Enter your password to save changes
-                                    //-     input(type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password")
-                                    //-     span.error.error-password
-                                    button(type="button" class="btn" id="save-profile-button") Save
+                                    button(type="button" class="btn" id="save-profile-button") Enregistrer
 block specificJs
     script(src="/static/scripts/utils/validator.js")
     script(src="/static/scripts/users/profile.js")

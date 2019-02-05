@@ -1,7 +1,7 @@
 extends _layout
 
 block app-title
-    | EventManagementSystem
+    | ThisEvent
 
 block vars
    - var bodyClass = 'home';
@@ -11,9 +11,9 @@ block content
         #homepage-cover-captions.vertical-center
             .container
                 div
-                    h2#hp-caption-title.caption-big EVENTS
-                p#hp-caption-subtitle Learn about new social events near you and subscribe with ease...
+                    h2#hp-caption-title.caption-big THISEVENTS
+                p#hp-caption-subtitle savoir plus sur les nouveaux événements sociaux près de vous et vous abonner facilement ...
                 div#hp-caption-buttons.buttons
-                    a.btn.btn-green(href="/events") Discover
+                    a.btn.btn-green(href="/events") Découvrir
                     if !user
-                        a.btn.btn-white(href="/login") Login or Register
+                        a.btn.btn-white(href="/login") Connecter ou Créer un Compte
