@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Telerik Software Academy - Node.js Apps",
   "main": "index.js",
+  "engines": {
+    "node": "8.x"
+  },
   "scripts": {
     "postinstall": "bower install",
     "start": "nodemon app/app.js",
