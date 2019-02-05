@@ -3,9 +3,9 @@
 const FacebookStrategy = require("passport-facebook");
 
 const FACEBOOK = {
-  FACEBOOK_APP_ID: "1378891302134747",
-  FACEBOOK_APP_SECRET: "04bed716742c12ed3b994952507323bf",
-  callbackURL: "localhost:3003/auth/facebook/callback"
+  FACEBOOK_APP_ID: "257050651847956",
+  FACEBOOK_APP_SECRET: "17fc7e27431a9fe9fbe14de3b7b1d33a",
+  callbackURL: "http://localhost:3003/auth/facebook/callback"
 };
 
 module.exports = function(passport, data) {

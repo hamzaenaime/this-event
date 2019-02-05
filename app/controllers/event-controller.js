@@ -271,6 +271,7 @@ module.exports = function(data) {
       data
         .getEventsGroupedByCategories()
         .then(events => {
+          
           if (req.isAuthenticated() && req.user.role === "admin") {
             return res.render("event/event-list", {
               events,

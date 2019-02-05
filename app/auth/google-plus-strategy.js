@@ -4,9 +4,9 @@ const GooglePlusStrategy = require("passport-google-oauth").OAuth2Strategy;
 
 const GOOGLEPLUS = {
   GOOGLE_APP_ID:
-    "42643689062-kmm89boegmnl0bhe4td16fdctlgbl77b.apps.googleusercontent.com",
-  GOOGLE_APP_SECRET: "n_KJIx9wlxyDwlFPIiGt837x",
-  callbackURL: "localhost:3003/auth/google/callback"
+    "737113597557-14veo69rha2f0ju662h3vpstu6ame6iq.apps.googleusercontent.com",
+  GOOGLE_APP_SECRET: "yem0_dYhnQrp-hqw3Wr66cU4",
+  callbackURL: "http://localhost:3003/auth/google/callback" 
 };
 
 module.exports = function(passport, data) {
