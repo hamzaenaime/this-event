@@ -28,7 +28,8 @@
                         $('.form-group.input').addClass('hidden');
                         $sendBtn.addClass('hidden');
                         $response.removeClass('sr-only');
-                        $response.html('Thank you for your message. We will reach out to you as soon as we can.');
+                        $response.html('
+                        Merci pour votre message. Nous vous contacterons dès que possible.');
                     })
                     .fail((err) => {
                         console.log(err);

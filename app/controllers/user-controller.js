@@ -106,7 +106,7 @@ module.exports = function(data) {
             } else {
               return reject({
                 name: "ValidationError",
-                message: "File types allowed: jpg, jpeg, png."
+                message: "Image doit étre de type : jpg, jpeg, png."
               });
             }
           };
