@@ -9,7 +9,7 @@
   "scripts": {
     "postinstall": "bower install",
     "dev": "nodemon -r dotenv/config app/app.js",
-    "start": "node app/app.js",
+    "start": "node -r dotenv/config app/app.js",
     "test": "./node_modules/.bin/mocha app/tests/**/*.js",
     "test-browser": "start chrome http://127.0.0.1:8080/app/tests/index.html && http-server ./"
   },
@@ -27,20 +27,20 @@
     "body-parser": "^1.15.2",
     "bower": "^1.8.8",
     "cookie-parser": "^1.4.3",
-    "crypto": "0.0.3",
+    "crypto": "1.0.1",
     "dotenv": "^6.2.0",
     "express": "^4.14.0",
     "express-session": "^1.14.2",
     "formidable": "^1.0.17",
-    "fs-extra": "^1.0.0",
+    "fs-extra": "^7.0.1",
     "jquery-ui": "^1.12.1",
-    "mongodb": "^2.2.11",
-    "mongoose": "^4.7.0",
-    "mongoose-unique-validator": "^1.0.3",
-    "nodemailer": "^2.6.4",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.10",
+    "mongoose-unique-validator": "^2.0.2",
+    "nodemailer": "^5.1.1",
     "nodemailer-smtp-transport": "^2.7.2",
-    "passport": "^0.3.2",
-    "passport-facebook": "^2.1.1",
+    "passport": "^0.4.0",
+    "passport-facebook": "^3.0.0",
     "passport-google-oauth": "^1.0.0",
     "passport-google-plus": "^0.5.1",
     "passport-local": "^1.0.0",
@@ -48,12 +48,12 @@
     "pug": "^2.0.0-beta6"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-http": "^3.0.0",
-    "eslint": "^3.10.2",
-    "http-server": "^0.9.0",
-    "mocha": "^3.2.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "eslint": "^5.13.0",
+    "http-server": "^0.11.1",
+    "mocha": "^5.2.0",
     "nodemon": "^1.18.9",
-    "sinon": "^1.17.6"
+    "sinon": "^7.2.3"
   }
 }
