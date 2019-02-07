@@ -6,7 +6,7 @@ const GOOGLEPLUS = {
   GOOGLE_APP_ID:
     "737113597557-14veo69rha2f0ju662h3vpstu6ame6iq.apps.googleusercontent.com",
   GOOGLE_APP_SECRET: "yem0_dYhnQrp-hqw3Wr66cU4",
-  callbackURL: "http://localhost:3003/auth/google/callback" 
+  callbackURL: "http://thiseventensat.herokuapp.com/auth/google/callback"
 };
 
 module.exports = function(passport, data) {

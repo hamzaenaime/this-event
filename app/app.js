@@ -10,7 +10,7 @@ require("./routers")(app, data);
 
 app.start();
 
-/*
+/*sss  bssssdsawq   1`jhbugtc345WZCTVBUIJO0K-PO9.EW\Q !qXSC HJKPL,!|ETYU
             #logo.col-sm-2
                 a(href="/")
                     span.fa-stack
