@@ -102,23 +102,16 @@ a {
     z-index: 9999;
     background: url("/static/media/loader.gif") no-repeat center center rgba(0, 0, 0, 0.25);
     background-size: 10%;
-    background-color: #4F8EC4;
+    background-color: #ffff;
     top: 0;
     left: 0;
 }
 
 #homepage-cover {
-    /*width: 100%;*/
     width: 100vw;
     height: 100vh;
     float: left;
-    /*position: fixed;*/
     top: 0;
-    /*background: url('/static/media/hp_cover.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;*/
 }
 
 
@@ -127,12 +120,16 @@ a {
 header {
     z-index: 100;
     float: left;
-    /*position: relative;*/
     position: relative;
     width: 100%;
-    border-bottom: 3px solid #33cb98;
+    border-bottom: 3px solid #4F8EC4;
 }
-
+.logothisevent{
+    position : absolute;
+    width: 40px;
+    height: 40px;
+    margin-right: 60px;
+}
 .page-home header,
 .page-login header,
 .page-register header {
@@ -184,7 +181,7 @@ header #main-nav li>a {
 }
 
 header #main-nav li>a {
-    color: #33cb98;
+    color: #4F8EC4;
 }
 
 .page-home header #main-nav li>a,
