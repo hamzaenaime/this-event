@@ -40,7 +40,7 @@ module.exports = function(data) {
                 });
         },
         loginFacebook() {
-            const auth = passport.authenticate('facebook', { scope: ['email', 'user_location'] });
+            const auth = passport.authenticate('facebook', { scope: ['email'] });
 
             return auth;
         },
