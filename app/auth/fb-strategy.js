@@ -3,8 +3,8 @@
 const FacebookStrategy = require("passport-facebook");
 
 const FACEBOOK = {
-  FACEBOOK_APP_ID: "257050651847956",
-  FACEBOOK_APP_SECRET: "17fc7e27431a9fe9fbe14de3b7b1d33a",
+  FACEBOOK_APP_ID: process.env.FACEBOOK_APP_ID,
+  FACEBOOK_APP_SECRET: process.env.FACEBOOK_APP_SECRET,
   callbackURL: "https://thiseventensat.herokuapp.com/auth/facebook/callback"
 };
 

@@ -3,10 +3,9 @@
 const GooglePlusStrategy = require("passport-google-oauth").OAuth2Strategy;
 
 const GOOGLEPLUS = {
-  GOOGLE_APP_ID:
-    "737113597557-14veo69rha2f0ju662h3vpstu6ame6iq.apps.googleusercontent.com",
-  GOOGLE_APP_SECRET: "yem0_dYhnQrp-hqw3Wr66cU4",
-  callbackURL: "https://thiseventensat.herokuapp.com/auth/google/callback" 
+  GOOGLE_APP_ID: process.env.GOOGLE_APP_ID,
+  GOOGLE_APP_SECRET: process.env.GOOGLE_APP_SECRET,
+  callbackURL: "https://thiseventensat.herokuapp.com/auth/google/callback"
 };
 
 module.exports = function(passport, data) {
