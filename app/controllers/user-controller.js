@@ -1,7 +1,7 @@
 "use strict";
 
 const nodemailer = require("nodemailer");
-const supportEmail = "thiseventproject@gmail.com";
+const supportEmail = process.env.USER;
 
 const helpers = require("../helpers"),
   formidable = require("formidable"),
@@ -14,8 +14,8 @@ const settings = {
   port: parseInt(587, 10),
   requiresAuth: true,
   auth: {
-    user: "thiseventproject@gmail.com",
-    pass: "thiseventensat"
+    user: process.env.USER,
+    pass: process.env.PASSWORD
   }
 };
 const transporter = nodemailer.createTransport(settings);
