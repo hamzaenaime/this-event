@@ -55,8 +55,8 @@ a {
     padding-left: 43px;
     padding-right: 43px;
     color: #ffffff;
-    background-color: #56daba;
-    border-color: #56daba;
+    background-color: #4F8EC4;
+    border-color: #4F8EC4
     border-radius: 4px;
     margin: 10px 0 0;
     text-align: center;
@@ -198,7 +198,7 @@ header #main-nav li:focus,
 header #main-nav li a:hover,
 header #main-nav li a:focus {
     background: none;
-    color: #56daba;
+    color: #4F8EC4;
 }
 
 header #logo {
@@ -233,7 +233,7 @@ header #logo .fa-stack {
 }
 
 header #logo .logo-hex {
-    background: #56daba;
+    background: #4F8EC4;
     margin-top: 14px;
     width: 54px;
     height: 31px;
@@ -312,7 +312,7 @@ header #logo .logo-fa {
     background: #fff;
     padding: 5px 20px;
     border-radius: 4px;
-    color: #56daba;
+    color: #4F8EC4;
     margin-left: 15px;
     float: left;
     position: relative;
@@ -407,7 +407,7 @@ header #logo .logo-fa {
     top: 68px;
     background: #fff;
     right: 0;
-    border-top: 2px solid #56daba;
+    border-top: 2px solid #4F8EC4;
     border-radius: 4px;
     padding: 0;
 }
@@ -516,7 +516,7 @@ header #logo .logo-fa {
     left: 50%;
     right: 50%;
     bottom: 0;
-    background: #56daba;
+    background: #4F8EC4;
     height: 4px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
