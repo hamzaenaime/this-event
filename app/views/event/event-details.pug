@@ -1,7 +1,7 @@
 extends ../_layout
 
 block app-title
-    | Event | EventManagementSystem
+    | Evenement | ThisEvent
 
 block vars
    - var bodyClass = 'event-detail';
@@ -27,9 +27,9 @@ block content
                             if user
                                 div.subscribe
                                     if hasAlreadySubscribed
-                                        button(type="button" class="btn"  id="subscribe-button") Unsubscribe
+                                        button(type="button" class="btn"  id="subscribe-button") Non abonné
                                     else
-                                        button(type="button" class="btn"  id="subscribe-button") Subscribe
+                                        button(type="button" class="btn"  id="subscribe-button") Abonné
                                 div.likes-wrapper
                                     if isLiked
                                         a(class='like-btn btn btn-default btn-success')
@@ -51,17 +51,17 @@ block content
                         div.event-details-info.col-sm-6
                             div.event-date
                                 div
-                                    label Start Date:
+                                    label Date Début:
                                     p=' ' + event.dateOfEvent.getFullYear() + '/' + (event.dateOfEvent.getMonth() + 1) + '/' + event.dateOfEvent.getDate()
                                 div
-                                    label End Date:
+                                    label Date Fin:
                                     p=' ' + event.endDateOfEvent.getFullYear() + '/' + (event.endDateOfEvent.getMonth() + 1) + '/' + event.endDateOfEvent.getDate()
                             div.event-time
                                 div
-                                    label Start Time:
+                                    label Heure du Début:
                                     p=' ' + (event.dateOfEvent.getHours()<10?'0':'') + event.dateOfEvent.getHours() + ':' + (event.dateOfEvent.getMinutes()<10?'0':'') + event.dateOfEvent.getMinutes() + 'h'
                                 div
-                                    label End Time:
+                                    label Heure du Fin:
                                     p=' ' + (event.endDateOfEvent.getHours()<10?'0':'') + event.endDateOfEvent.getHours() + ':' + (event.endDateOfEvent.getMinutes()<10?'0':'') + event.endDateOfEvent.getMinutes() + 'h'
                             div.location
                                 label Location:
@@ -71,7 +71,7 @@ block content
                                 div.capacity
                                     label
                                     if(event.capacity)
-                                        label Capacity:
+                                        label Capacité:
                                         p=' ' +  event.capacity
                                     else
                                         label Capacity:
@@ -96,7 +96,7 @@ block content
                                                         span.author='From: ' + comment.author
                                                         span.dateTime='On: ' + comment.date.getFullYear() + '/' + (comment.date.getMonth() + 1) + '/' + comment.date.getDate() + ' ' + 'Time: ' + (comment.date.getHours()<10?'0':'') + comment.date.getHours() + ':' + (comment.date.getMinutes()<10?'0':'') + comment.date.getMinutes() + 'h'
                                 else
-                                    div No comments at the moment...
+                                    div Pas de Commentaires ...
 
                                 div.make-comment
                                     textarea(type="text"
@@ -105,7 +105,7 @@ block content
                                         class="form-comment form-control"
                                         id="comment-textarea")
                                     span.error
-                                    button(type="button" class="btn-green" id="comment-button") Add Comment
+                                    button(type="button" class="btn-green" id="comment-button") Ajouter un Commentaire
 
 
 block specificJs

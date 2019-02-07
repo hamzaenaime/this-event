@@ -1,7 +1,7 @@
 extends ../_layout
 
 block app-title
-    | Events | EventManagementSystem
+    | Evenement | ThisEvent
 
 block vars
    - var bodyClass = 'events-list inner';
@@ -16,21 +16,21 @@ block content
                 div#events-block-it
                     div.title
                         h1
-                            |  Discover
-                            strong  Events
-                            |  Easy
+                            |  Découvrire
+                            strong  Les Evenement
+                            |  Facilement
                         i(class="fa fa-diamond fa-2x fa-fw")
-                        p Loop through current event catalogue and find the most suitable events for you...
+                        p Parcourez le catalogue d'événements en cours et trouvez les événements qui vous conviennent le mieux...
 
                     div#search.button-group
                         form.form-inline(action="/events/search" method="GET")
-                            input.form-control(type="text" placeholder="Country" name="country" value= country)
-                            input.form-control(type="text" placeholder="City" name="city" value= city)
-                            input.form-control(type="text" placeholder= "Name" name="name" value= name)
+                            input.form-control(type="text" placeholder="Payée" name="country" value= country)
+                            input.form-control(type="text" placeholder="Ville" name="city" value= city)
+                            input.form-control(type="text" placeholder= "Nom" name="name" value= name)
                             input.form-control(type="text" id="datepicker" placeholder="Date of event" name="dateOfEvent" value= dateOfEvent)
-                            button.button(class="btn button is-checked" data-filter="*") Search
+                            button.button(class="btn button is-checked" data-filter="*") Rechercher
                     div#filters.button-group
-                        button.button(class="btn button is-checked" data-filter="*") Show all
+                        button.button(class="btn button is-checked" data-filter="*") Afficher Tous
                         each category in events
                             - var trimmedCatName = category.name.replace(" ", "");
                             button.button(class="btn button" data-filter='.' + trimmedCatName)= category.name

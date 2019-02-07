@@ -1,7 +1,7 @@
 extends ../_layout
 
 block app-title
-    | Create Event | EventManagementSystem
+    | Creation d'évenement | ThisEvent
 
 block vars
    - var bodyClass = 'register page-create-event';
@@ -13,7 +13,7 @@ block content
                 .row
                     .col-sm-8.col-sm-offset-2.text
                     h1
-                        strong Event creator
+                        strong Createur de l'évenement
                     .description
                         p
                 .row
@@ -21,28 +21,28 @@ block content
                         .form-box
                             .form-top
                                 .form-top-left
-                                    h3 Create your own event
-                                    p Fill in the form below:
+                                    h3 Créer votre évenement
+                                    p Remplire la formulaire ci-dessous:
                                 .form-top-right
                                    i.fa.fa-calendar-o
                             .form-bottom
 
                                 #error-container.alert.alert-warning
-                                    strong The following errors need to be corrected:
+                                    strong Les erreurs suivant doivent étre correcter:
                                     ul
                                 form(role="form" enctype="multipart/form-data" action="" method="post" class="registration-form" id="user-create-form")
                                     .form-group
                                         label(class="sr-only" for="form-name")
                                         input(type="text"
                                               name="name"
-                                              placeholder="Name..."
+                                              placeholder="Nom..."
                                               class="form-name form-control"
                                               id="form-name")
                                         span.error
                                     .form-group
                                         label(class="sr-only" for="form-email")
                                         select(name="eventType" id="eventType-drop-down" class="form-control")
-                                            option(selected disabled) Choose category
+                                            option(selected disabled) Choisir une catégorie
                                             each eventType in eventTypes
                                                 option(value= eventType.name)= eventType.name
 
@@ -50,14 +50,14 @@ block content
                                     .form-group
                                         label(class="sr-only" for="form-password")
                                         select(name="country" id="country-drop-down" class="form-control")
-                                            option(selected disabled) Choose country
+                                            option(selected disabled) Choisir payée
                                             each country in countries
                                                 option(value= country.name)= country.name
                                         span.error
                                     .form-group
                                         label(class="sr-only" for="form-password")
                                         select(name="city" id="city-drop-down" class="form-control") |
-                                            option(selected disabled) Choose city
+                                            option(selected disabled) Choisir la ville
                                             each city in cities
                                                 option(value= city.name id="city-option" country= city.country.name)= city.name
                                         span.error
@@ -65,7 +65,7 @@ block content
                                         label(class="sr-only" for="form-address")
                                         input(type="text"
                                               name="address"
-                                              placeholder="Address.."
+                                              placeholder="Adresse.."
                                               class="form-address form-control"
                                               id="form-address")
                                         span.error
@@ -81,7 +81,7 @@ block content
                                         label(class="sr-only" for="form-dateOfEvent")
                                         input(type="text"
                                               name="dateOfEvent"
-                                              placeholder="Start date..."
+                                              placeholder="Date début..."
                                               class="form-dateOfEvent form-control datepicker"
                                               id="")
                                         span.error
@@ -89,7 +89,7 @@ block content
                                         label(class="sr-only" for="form-endDateOfEvent")
                                         input(type="text"
                                               name="endDateOfEvent"
-                                              placeholder="End date..."
+                                              placeholder="Date fin..."
                                               class="form-dateOfEvent form-control datepicker"
                                               id="")
                                         span.error
@@ -97,11 +97,11 @@ block content
                                         label(class="sr-only" for="form-capacity")
                                         input(type="text"
                                               name="capacity"
-                                              placeholder="Capacity.."
+                                              placeholder="Capacité.."
                                               class="form-capacity form-control"
                                               id="form-capacity")
                                         span.error
-                                    label You can either provide a url or upload an image for the cover of your event
+                                    label Vous pouvez choisir l'url de cover de votre évenement ou uploader l'image..
                                     .form-group
                                         label(class="sr-only" for="form-coverUrl")
                                         input(type="text"
@@ -118,7 +118,7 @@ block content
                                               class="form-file form-control"
                                               id="form-file")
                                         span.error
-                                    button(type="button" class="btn" id="create-button") Create Event
+                                    button(type="button" class="btn" id="create-button") Créer l'évenement
 block specificJs
     script(src="/static/scripts/utils/validator.js")
     script(src="/static/scripts/events/create-event.js")
