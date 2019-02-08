@@ -77,7 +77,7 @@ const INIT_SHOW = 15;
         }
 
         //append load more button
-        $grid.after('<button id="load-more" class="btn btn-green"><i class="fa fa-refresh"></i> Load More</button>');
+        $grid.after('<button id="load-more" class="btn btn-green"><i class="fa fa-refresh"></i>Afficher plus :</button>');
 
         //when load more button clicked
         $('#load-more').click(function() {

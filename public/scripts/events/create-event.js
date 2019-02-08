@@ -138,29 +138,29 @@ const MIN_NAME_LENGTH = 3,
                 selectName = select[0].name;
 
             if (selectName === 'eventType') {
-                if(select[0].value !== 'Choose category') {
+                if (select[0].value !== 'Choisir une catégorie') {
                     isCategoryValid = true;
                 } else {
                     select.addClass('input-error');
-                    select.next('span').text('Field is required.');
+                    select.next('span').text(' *Ce champ est obligatoire .');
                 }
             }
 
             if (selectName === 'country') {
-                if (select[0].value !== 'Choose country') {
+                if (select[0].value !== 'Choisir payée') {
                     isCountryValid = true;
                 } else {
                     select.addClass('input-error');
-                    select.next('span').text('Field is required.');
+                    select.next('span').text(' *Ce champ est obligatoire .');
                 }
             }
 
             if (selectName === 'city') {
-                if (select[0].value !== 'Choose city') {
+                if (select[0].value !== 'Choisir la ville') {
                     isCityValid = true;
                 } else {
                     select.addClass('input-error');
-                    select.next('span').text('Field is required.');
+                    select.next('span').text(' *Ce champ est obligatoire .');
                 }
             }
         });
@@ -174,7 +174,7 @@ const MIN_NAME_LENGTH = 3,
 
                 if (!file) {
                     input.addClass('input-error');
-                    input.next('span').text('Choose file to upload.');
+                    input.next('span').text('* Veuiller choisir un fichier');
                     return;
                 }
 
@@ -182,14 +182,14 @@ const MIN_NAME_LENGTH = 3,
                     isFileExtensionValid = true;
                 } else {
                     input.addClass('input-error');
-                    input.next('span').text('File types allowed: jpg, jpeg, png.');
+                    input.next('span').text(' T*ypes de fichiers autorisé: jpg, jpeg, png.');
                 }
 
                 if (file.size <= MAX_FILE_SIZE) {
                     isFileSizeValid = true;
                 } else {
                     input.addClass('input-error');
-                    input.next('span').text('Maximum file size is 2MB!');
+                    input.next('span').text(' *Taille Maximale : 2MB!');
                 }
             }
 
