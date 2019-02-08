@@ -27,9 +27,9 @@ block content
                             if user
                                 div.subscribe
                                     if hasAlreadySubscribed
-                                        button(type="button" class="btn"  id="subscribe-button") Non abonné
+                                        button(type="button" class="btn"  id="subscribe-button") Se Désabonné
                                     else
-                                        button(type="button" class="btn"  id="subscribe-button") Abonné
+                                        button(type="button" class="btn"  id="subscribe-button") S'Abonné
                                 div.likes-wrapper
                                     if isLiked
                                         a(class='like-btn btn btn-default btn-success')
@@ -65,9 +65,9 @@ block content
                                     p=' ' + (event.endDateOfEvent.getHours()<10?'0':'') + event.endDateOfEvent.getHours() + ':' + (event.endDateOfEvent.getMinutes()<10?'0':'') + event.endDateOfEvent.getMinutes() + 'h'
                             div.location
                                 label Location:
-                                div.country=' - Country: ' + event.country.name
-                                div.city=' - City: ' + event.city.name
-                                div.address=' - Address: ' + event.address
+                                div.country=' - Payée: ' + event.country.name
+                                div.city=' - Ville: ' + event.city.name
+                                div.address=' - Adresse: ' + event.address
                                 div.capacity
                                     label
                                     if(event.capacity)
@@ -102,11 +102,11 @@ block content
                                 div.make-comment
                                     textarea(type="text"
                                         name="comment"
-                                        placeholder="Comment.."
+                                        placeholder="Ajouter un Commentaire..."
                                         class="form-comment form-control"
                                         id="comment-textarea")
                                     span.error
-                                    button(type="button" class="btn-green" id="comment-button") Ajouter un Commentaire
+                                    button(type="button" class="btn-green" id="comment-button") Commenter
 
 
 block specificJs
