@@ -40,7 +40,7 @@ const MIN_COMMENT_LENGTH = 5,
                         let $commentDateTime = $('<span>', { class: 'dateTime' } );
                         $comment.html(' ' + commentData.commentText);
                         $commentAuthor.html('From: ' + res.commentData.commentAuthor);
-                        $commentDateTime.html('On: ' + res.commentData.dateOfComment + ' ' + 'Time:' + res.commentData.timeOfComment);
+                        $commentDateTime.html('On: ' + res.commentData.dateOfComment + ' ' + 'Temps:' + res.commentData.timeOfComment);
                         $commentAdds.append($commentAuthor);
                         $commentAdds.append($commentDateTime);
                         $commentDetails.append($comment);
