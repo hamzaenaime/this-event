@@ -6,7 +6,7 @@ const validator = (() => {
 
         if (input.val() === '') {
             input.addClass('input-error');
-            input.next('span').text('Field is required');
+            input.next('span').text('*Ce champ est obligatoire !');
         }
         else if (wantLengthValidation && !validateInputLength(input.val(), min, max)) {
             input.addClass('input-error');
@@ -14,7 +14,7 @@ const validator = (() => {
         }
         else if (wantCharacterValidation && validateInputCharacters(input.val(), pattern)) {
             input.addClass('input-error');
-            input.next('span').text('Invalid characters!');
+            input.next('span').text('*characters Invalids!');
         }
         else {
             input.removeClass('input-error');
@@ -50,7 +50,7 @@ const validator = (() => {
 
         if (input.val() === '') {
             input.addClass('input-error');
-            input.next('span').text('Field is required');
+            input.next('span').text('*Ce champ est obligatoire !');
         }
         else if (isNaN(input.val()) || +input.val() < min || +input.val() > max) {
             input.addClass('input-error');

@@ -21,12 +21,12 @@
                 })
                 .done((res) => {
                     if(res.userHasSubscribed){
-                        $subscribeBtn.html('Unsubscribe');
+                        $subscribeBtn.html('se Desabonné');
                         $subscribeBtn.removeClass('btn-default');
                         $subscribeBtn.addClass('btn-success');
                     }
                     else{
-                        $subscribeBtn.html('Subscribe');
+                        $subscribeBtn.html('s\'Abonné');
                         $subscribeBtn.removeClass('btn-default');
                         $subscribeBtn.addClass('btn-success');
                     }
