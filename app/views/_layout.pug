@@ -23,17 +23,17 @@ html(lang="en")
     block vars
         - var bodyClass = '';
     body(class='page-' + bodyClass)
-        //- if user
-        //-     if isAdmin
-        //-         include partials/_header-admin.pug
-        //-     else
-        //-         include partials/_header-user.pug
-        //- else
-        //-     include partials/_header.pug
-        //- #page-loader
-        //- #content
-        //-     block content
-        //- include partials/_footer.pug
+        if user
+            if isAdmin
+                include partials/_header-admin.pug
+            else
+                include partials/_header-user.pug
+        else
+            include partials/_header.pug
+        #page-loader
+        #content
+            block content
+        include partials/_footer.pug
 
         // include partials/_footer.pug
         script(src="/static/bower_components/jquery/dist/jquery.min.js")
