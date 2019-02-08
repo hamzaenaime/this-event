@@ -3,8 +3,10 @@
 #events-block-it {
   background-image: url("/static/media/events_background.jpg") !important;
   background-position: center !important;
-  background-repeat: no-repeat !important;
+  /* background-repeat: no-repeat !important; */
   background-size: cover !important;
+  /* background-color: #33998f; */
+
   /*padding:150px 0 200px;*/
 }
 
