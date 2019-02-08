@@ -1,73 +1,96 @@
-'use strict';
+"use strict";
 
 const validator = (() => {
-    function validateInputString(input, wantLengthValidation, wantCharacterValidation, min = 0, max = 100, pattern = '') {
-        let isValid = false;
+  function validateInputString(
+    input,
+    wantLengthValidation,
+    wantCharacterValidation,
+    min = 0,
+    max = 100,
+    pattern = ""
+  ) {
+    let isValid = false;
 
-        if (input.val() === '') {
-            input.addClass('input-error');
-            input.next('span').text('*Ce champ est obligatoire !');
-        }
-        else if (wantLengthValidation && !validateInputLength(input.val(), min, max)) {
-            input.addClass('input-error');
-            input.next('span').text('Invalid length: must be between ' + min + ' and ' + max);
-        }
-        else if (wantCharacterValidation && validateInputCharacters(input.val(), pattern)) {
-            input.addClass('input-error');
-            input.next('span').text('*characters Invalids!');
-        }
-        else {
-            input.removeClass('input-error');
-            input.next('span').text('');
-            isValid = true;
-        }
-
-        return isValid;
+    if (input.val() === "") {
+      input.addClass("input-error");
+      input.next("span").text("*Ce champ est obligatoire !");
+    } else if (
+      wantLengthValidation &&
+      !validateInputLength(input.val(), min, max)
+    ) {
+      input.addClass("input-error");
+      input
+        .next("span")
+        .text("Longueure Invalide: il doit étre entre " + min + " et " + max);
+    } else if (
+      wantCharacterValidation &&
+      validateInputCharacters(input.val(), pattern)
+    ) {
+      input.addClass("input-error");
+      input.next("span").text("*characters Invalids!");
+    } else {
+      input.removeClass("input-error");
+      input.next("span").text("");
+      isValid = true;
     }
 
-    function validateInputLength(value, min, max) {
-        let hasValidLength = true;
+    return isValid;
+  }
 
-        if ((value.length < min || value.length > max)) {
-            hasValidLength = false;
-        }
+  function validateInputLength(value, min, max) {
+    let hasValidLength = true;
 
-        return hasValidLength;
+    if (value.length < min || value.length > max) {
+      hasValidLength = false;
     }
 
-    function validateInputCharacters(value, pattern) {
-        let hasErrors = false;
+    return hasValidLength;
+  }
 
-        if (!pattern.test(value)) {
-            hasErrors = true;
-        }
+  function validateInputCharacters(value, pattern) {
+    let hasErrors = false;
 
-        return hasErrors;
+    if (!pattern.test(value)) {
+      hasErrors = true;
     }
 
-    function validateInputNumber(input, min = Number.MIN_SAFE_INTEGER, max = Number.MAX_SAFE_INTEGER) {
-        let isValid = false;
+    return hasErrors;
+  }
 
-        if (input.val() === '') {
-            input.addClass('input-error');
-            input.next('span').text('*Ce champ est obligatoire !');
-        }
-        else if (isNaN(input.val()) || +input.val() < min || +input.val() > max) {
-            input.addClass('input-error');
-            input.next('span').text('Invalid ' + input.attr('name') + ': must be between ' + min + ' and ' + max);
-        }
-        else {
-            input.removeClass('input-error');
-            input.next('span').text('');
-            isValid = true;
-        }
+  function validateInputNumber(
+    input,
+    min = Number.MIN_SAFE_INTEGER,
+    max = Number.MAX_SAFE_INTEGER
+  ) {
+    let isValid = false;
 
-        return isValid;
+    if (input.val() === "") {
+      input.addClass("input-error");
+      input.next("span").text("*Ce champ est obligatoire !");
+    } else if (isNaN(input.val()) || +input.val() < min || +input.val() > max) {
+      input.addClass("input-error");
+      input
+        .next("span")
+        .text(
+          "Invalid " +
+            input.attr("name") +
+            ": doit étre entre  " +
+            min +
+            " et " +
+            max
+        );
+    } else {
+      input.removeClass("input-error");
+      input.next("span").text("");
+      isValid = true;
     }
 
-    return {
-        validateInputString,
-        validateInputNumber,
-        validateInputLength
-    };
+    return isValid;
+  }
+
+  return {
+    validateInputString,
+    validateInputNumber,
+    validateInputLength
+  };
 })();

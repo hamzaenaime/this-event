@@ -91,11 +91,11 @@ block content
                                     div(id="comments")
                                         each comment in event.comments
                                             div.comment-det
-                                                p
+                                                p.comment-adds
                                                     span.author='' + comment.author
                                                     span.comment='   :  ' + comment.text
-                                                    span.dateTime='' + comment.date.getFullYear() + '/' + (comment.date.getMonth() + 1) + '/' + comment.date.getDate() + ' ' + 'Time: ' + (comment.date.getHours()<10?'0':'') + comment.date.getHours() + ':' + (comment.date.getMinutes()<10?'0':'') + comment.date.getMinutes() + 'h'
-                                                    div.comment-adds
+                                                    span.dateTime='' + comment.date.getFullYear() + '/' + (comment.date.getMonth() + 1) + '/' + comment.date.getDate() + ' ' + '   ' + (comment.date.getHours()<10?'0':'') + comment.date.getHours() + ':' + (comment.date.getMinutes()<10?'0':'') + comment.date.getMinutes() + 'h'
+                                                    
                                 else
                                     div Pas de Commentaires ...
 

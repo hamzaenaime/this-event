@@ -1,0 +1,332 @@
+[33mcommit 4c140d340ec568a99253892a90ddcdcb128e961b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Merge: af8360b ba82651
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Fri Feb 8 20:15:46 2019 +0100
+
+    Merge branch 'master' of https://github.com/hamzaenaime/this-event
+
+[33mcommit ba8265109103fb50dc1da0082d58be716cc2312b[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: TaoufikXx <taoufik.ajaanit.1@gmail.com>
+Date:   Fri Feb 8 19:58:49 2019 +0100
+
+    test layout
+
+[33mcommit 0661c54e33d0a36c1b2787c17a610a57bf44d96a[m
+Author: TaoufikXx <taoufik.ajaanit.1@gmail.com>
+Date:   Fri Feb 8 19:57:40 2019 +0100
+
+    test layout
+
+[33mcommit 84066cf3e8dba1f279f2a9ec90114c4c808ec53d[m
+Author: TaoufikXx <taoufik.ajaanit.1@gmail.com>
+Date:   Fri Feb 8 19:55:56 2019 +0100
+
+    add footer
+
+[33mcommit af8360b65cb488c3529cf1a3f8f4eee9e472c15a[m
+Merge: c4f403a 57f912e
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Fri Feb 8 19:52:59 2019 +0100
+
+    Merge branch 'master' of https://github.com/hamzaenaime/this-event
+
+[33mcommit 57f912e8045087d6fbaa47a62a137a04c126651c[m
+Author: TaoufikXx <taoufik.ajaanit.1@gmail.com>
+Date:   Fri Feb 8 19:44:57 2019 +0100
+
+    traduct some stuffs
+
+[33mcommit a09f5a7b57409bf4e75a57d101f48c8a4472fc6a[m
+Author: TaoufikXx <taoufik.ajaanit.1@gmail.com>
+Date:   Fri Feb 8 15:42:07 2019 +0100
+
+    des traduction
+
+[33mcommit c4f403a5e740ba12291c7f45771f0a566753d318[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Fri Feb 8 14:38:05 2019 +0100
+
+    css amel
+
+[33mcommit 55578b6aff71d70e9ecfff47cc407c7d3c165572[m
+Merge: 4f4d922 eb1a069
+Author: TaoufikXx <taoufik.ajaanit.1@gmail.com>
+Date:   Thu Feb 7 23:05:21 2019 +0100
+
+    Merge branch 'master' of https://github.com/hamzaenaime/this-event
+
+[33mcommit 4f4d922e2d90fddb1913d40ba0c8f652840e298e[m
+Author: TaoufikXx <taoufik.ajaanit.1@gmail.com>
+Date:   Thu Feb 7 23:04:19 2019 +0100
+
+    remove email unique contraint
+
+[33mcommit eb1a069f202c25f657d5332db6ac43dd2ce8c649[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 20:18:14 2019 +0100
+
+    add facebook variables env to .env
+
+[33mcommit 2bbbae55ef65775085c6a8cc1e0c2636f2959ec3[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 19:06:01 2019 +0100
+
+    .env error
+
+[33mcommit 15ddcbb53d6c366924c1f32d67253171a14abb72[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 17:15:13 2019 +0100
+
+    add .env
+
+[33mcommit 69827c3ab020320929daf2d7a1215dffa7d72267[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 17:10:27 2019 +0100
+
+    add env
+
+[33mcommit 6e2d5641cf4a8f8808e5818824c29aef7528cfa8[m
+Merge: 6439533 ce33725
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 17:05:18 2019 +0100
+
+    Merge branch 'master' of https://github.com/hamzaenaime/this-event
+
+[33mcommit 6439533950dd2a35ba2d4d0834bd42a28458567a[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 17:04:51 2019 +0100
+
+    remove .env
+
+[33mcommit 10e3033918d85da2dcedf61b0833cc8d057a32ac[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 17:04:15 2019 +0100
+
+    remove .git
+
+[33mcommit ce3372510f555532f7e392d9326f8d513a5d75bf[m
+Merge: 9e03af6 045a65a
+Author: TaoufikXx <taoufik.ajaanit.1@gmail.com>
+Date:   Thu Feb 7 17:02:13 2019 +0100
+
+    Merge branch 'master' of https://github.com/hamzaenaime/this-event
+
+[33mcommit 9e03af6092bcc776fc890afcc642298884666eee[m
+Author: TaoufikXx <taoufik.ajaanit.1@gmail.com>
+Date:   Thu Feb 7 17:01:31 2019 +0100
+
+    remove location scoop
+
+[33mcommit 045a65a4f6a7f8554135e514597f0e4164d1ae5b[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 16:56:02 2019 +0100
+
+    add email/password to .env
+
+[33mcommit b4487e8da80f107ba74b6426096e91b29e609bcc[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 16:43:12 2019 +0100
+
+    update package-lock.json to avoid security alerts
+
+[33mcommit 450b355b3427b70e9ba7492a6f7ff9413dae470b[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 16:34:53 2019 +0100
+
+    fix script
+
+[33mcommit 8e34a743e56d245d3b5a5eaa6d3557a77eb0033f[m
+Merge: 973d4c8 31ee391
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 16:14:37 2019 +0100
+
+    Merge branch 'master' of https://github.com/hamzaenaime/this-event
+
+[33mcommit 973d4c88edfb479005b4c1c0700c3625f0b7123d[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 16:14:12 2019 +0100
+
+    add dotenv to stock envirement variables
+
+[33mcommit 38338de35347d835f33657430c91de486049c580[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 16:02:51 2019 +0100
+
+    fix thisevents to thisevent
+
+[33mcommit 31ee3912bea3b42fd8c34d49632124b4dfa40232[m
+Author: ayoubhamaoui <ayoub10hamaoui@gmaiL.com>
+Date:   Thu Feb 7 15:59:56 2019 +0100
+
+    fix conflict
+
+[33mcommit 46c8a15b507eff5dede9b089031c57e3386cf8aa[m
+Merge: 795c9d9 13344b8
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 14:14:45 2019 +0100
+
+    fix conflits
+
+[33mcommit 795c9d99a48fb832daa32ae930d380cf3784f94b[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 14:13:20 2019 +0100
+
+    change fb google+ strategy
+
+[33mcommit 13344b8ed70dd6d9a550948160bb049bec42c6eb[m
+Author: ayoubhamaoui <ayoub10hamaoui@gmaiL.com>
+Date:   Thu Feb 7 14:03:36 2019 +0100
+
+    add link to logo
+
+[33mcommit 81c5bf8cec50ff423fd339008581c702eb9c9cd6[m
+Merge: a9bfa28 4da40c5
+Author: ayoubhamaoui <ayoub10hamaoui@gmaiL.com>
+Date:   Thu Feb 7 13:38:43 2019 +0100
+
+    Merge branch 'master' of https://github.com/hamzaenaime/this-event
+
+[33mcommit 4da40c51ecae01b82f772ade8799f6c4f43d02d4[m
+Author: TaoufikXx <taoufik.ajaanit.1@gmail.com>
+Date:   Thu Feb 7 13:37:38 2019 +0100
+
+    add https
+
+[33mcommit a9bfa28cd8ee5139e8d5106d4ec9ea297c1ea356[m
+Author: ayoubhamaoui <ayoub10hamaoui@gmaiL.com>
+Date:   Thu Feb 7 13:36:52 2019 +0100
+
+    add png logo
+
+[33mcommit a2994a9cc33edb1ed3e6eb22ee0050f694fb5cec[m
+Author: TaoufikXx <taoufik.ajaanit.1@gmail.com>
+Date:   Thu Feb 7 13:26:27 2019 +0100
+
+    fix redirects
+
+[33mcommit 41ee39d136a7e8eaf91928a9c8a9b224e9f3ba54[m
+Merge: 6c340de b26a30c
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 12:19:04 2019 +0100
+
+    Merge branch 'master' of https://github.com/hamzaenaime/this-event
+
+[33mcommit 6c340deb8e2620f9204ea601c3c1f121c7e15fce[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 12:18:21 2019 +0100
+
+    fix bugs
+
+[33mcommit b26a30c7282a5bff3d5ba863a971892c0dff3745[m
+Author: ayoubhamaoui <ayoub10hamaoui@gmaiL.com>
+Date:   Thu Feb 7 12:11:11 2019 +0100
+
+    add loader gif
+
+[33mcommit a035d5b2e34ee3b959fbd2a8e31b1c4d4e90c871[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 11:50:41 2019 +0100
+
+    remove logo
+
+[33mcommit b1a027a26e8524fb130cb615c0cd5d085e5d7301[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 11:31:34 2019 +0100
+
+    fix somme errors
+
+[33mcommit 57132ad8bb756b53d848c5caff43122cb9edab65[m
+Author: ayoubhamaoui <ayoub10hamaoui@gmaiL.com>
+Date:   Thu Feb 7 11:28:50 2019 +0100
+
+    fix mongoose error
+
+[33mcommit 0b2d1f6d77f722835a5b8dbe20c917bfbc7f4563[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 11:20:50 2019 +0100
+
+    contact us works now
+
+[33mcommit cd32ed217c1a75ecab8c642ffc1d780f55af837d[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 11:09:00 2019 +0100
+
+    change colors
+
+[33mcommit b270a5740c3acd9ec132d99cbb4f14847664cb30[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 09:37:49 2019 +0100
+
+    change color
+
+[33mcommit 997c361718a97d7288fa7e27b4e21b9cd794f2de[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Thu Feb 7 09:31:18 2019 +0100
+
+    change background
+
+[33mcommit c08cbadc43b60b1c954955ebe56686ecdeb4f496[m
+Author: TaoufikXx <taoufik.ajaanit.1@gmail.com>
+Date:   Tue Feb 5 23:01:23 2019 +0100
+
+    fix oAuth
+
+[33mcommit 8f6eb58303ea18d3a0b8c5d4b64ef73eab43b5ef[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Tue Feb 5 22:21:28 2019 +0100
+
+    view/users
+
+[33mcommit 699b67ab5345f79c6f4f75c2afddce3e608f2f13[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Tue Feb 5 22:02:22 2019 +0100
+
+    fix npm start
+
+[33mcommit 7609a44a97884f54496cac3732650159ff82756f[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Tue Feb 5 21:58:36 2019 +0100
+
+    fix port env
+
+[33mcommit f2e195d8c7a37480ce2a4a72fb6a4fd5d05a894a[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Tue Feb 5 21:41:14 2019 +0100
+
+    fix config
+
+[33mcommit 8eca72126098771efc567c525db51027c259deb7[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Tue Feb 5 21:35:28 2019 +0100
+
+    add bower dependecies
+
+[33mcommit 1685e2c5f341bbf7578701c79188c4d777a54878[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Tue Feb 5 21:31:56 2019 +0100
+
+    add node version
+
+[33mcommit c1865805ff738012e70c8f1870251e9fd2e3908b[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Tue Feb 5 21:24:46 2019 +0100
+
+    fix bugs
+
+[33mcommit 9f4ea5e0ea83aef4b3d68afeec8741489519c912[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Tue Feb 5 19:48:24 2019 +0100
+
+    all set
+
+[33mcommit 9ed3709a0831b7cb93520660486c21fa56a35b00[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Tue Feb 5 19:08:16 2019 +0100
+
+    update readme
+
+[33mcommit b33d6cb36187bbb9d3efd329affe3aac3a6daaef[m
+Author: enaime hamza <hamza.enaime@outlook.com>
+Date:   Tue Feb 5 19:03:26 2019 +0100
+
+    commit
