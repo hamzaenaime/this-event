@@ -17,7 +17,7 @@ block content
                     div.title
                         h1
                             |  Découvrire
-                            strong  Les Evenement
+                            strong  Les Evénement
                             |  Facilement
                         i(class="fa fa-diamond fa-2x fa-fw")
                         p Parcourez le catalogue d'événements en cours et trouvez les événements qui vous conviennent le mieux...
@@ -26,8 +26,8 @@ block content
                         form.form-inline(action="/events/search" method="GET")
                             input.form-control(type="text" placeholder="Pays" name="country" value= country)
                             input.form-control(type="text" placeholder="Ville" name="city" value= city)
-                            input.form-control(type="text" placeholder= "Nom d'evenement" name="name" value= name)
-                            input.form-control(type="text" id="datepicker" placeholder="Date d'evenement" name="dateOfEvent" value= dateOfEvent)
+                            input.form-control(type="text" placeholder= "Nom d'événement" name="name" value= name)
+                            input.form-control(type="text" id="datepicker" placeholder="Date d'événement" name="dateOfEvent" value= dateOfEvent)
                             button.button(class="btn button is-checked" data-filter="*") Rechercher
                     div#filters.button-group
                         button.button(class="btn button is-checked" data-filter="*") Afficher Tous
