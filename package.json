@@ -1,7 +1,7 @@
 {
-  "name": "event-management-system",
+  "name": "ThisEvent",
   "version": "1.0.0",
-  "description": "Telerik Software Academy - Node.js Apps",
+  "description": "ENSA TANGER THIS EVENT - Node.js Apps",
   "main": "index.js",
   "engines": {
     "node": "8.x"
@@ -17,12 +17,12 @@
     "type": "git",
     "url": "git+https://github.com/hamzaenaime/this-event"
   },
-  "author": "",
+  "author": "ENAIME HAMZA | AJAANIT TAOUFIK | NAFAR BILAL | HAMAOUI AYOUB",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TeamNinjas/EventManagementSystem/issues"
+    "url": "https://github.com/hamzaenaime/this-event/issues"
   },
-  "homepage": "https://github.com/TeamNinjas/EventManagementSystem#readme",
+  "homepage": "https://github.com/hamzaenaime/this-event#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "bower": "^1.8.8",

@@ -1,19 +1,11 @@
 {
-  "name": "event-management-system",
-  "description": "Telerik Software Academy - Node.js Apps",
+  "name": "ThisEvent",
+  "description": "ENSA TANGER THIS EVENT - Node.js Apps",
   "main": "index.js",
-  "authors": [
-    "team-ninjas"
-  ],
+  "author": "ENAIME HAMZA | AJAANIT TAOUFIK | NAFAR BILAL | HAMAOUI AYOUB",
   "license": "ISC",
-  "homepage": "https://github.com/TeamNinjas/EventManagementSystem",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
+  "homepage": "https://github.com/hamzaenaime/this-event",
+  "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
   "dependencies": {
     "bootstrap": "^3.3.7",
     "jquery": "^3.1.1",
@@ -23,7 +15,7 @@
     "jquery-backstretch": "backstretch#^2.0.4",
     "isotope": "^3.0.1",
     "jqueryui-timepicker-addon": "^1.6.3",
-    "scheduler": "^4.3.1"
+    "scheduler": "^5.1.6"
   },
   "resolutions": {
     "jquery": "^3.1.1"
